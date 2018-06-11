@@ -58,43 +58,7 @@
 	
 	}
 	
-	.mySlides {display: none}
 	
-	.reach{
-
-position: relative;
-    bottom: 250px;
-    left: 0%;
-    transform: translate(0%,-50%);
-
-}
-
-.reach1{
-
-position: relative;
-    bottom: 250px;
-    right: 0%;
-    transform: translate(0%,-50%);
-
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 	
 	
@@ -190,39 +154,7 @@ $(".row").removeClass("offset");
 			</div>
 			
 	
-	<div class="wrapper style1">
-	<h2>Fitness Gallery</h2>
-
-	<hr>
-			<br/>
-
-<div class="mySlides fade">
-  
-  <img src="images/spotlight.JPG" style="max-width:100%; height:500px;">
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/spotlight01.JPG" style="max-width:100%; height:500px;">
-  
-</div>
-
-<div class="mySlides fade">
-
-  <img src="images/spotlight05.JPG" style="max-width:100%; height:500px;">
-  
-</div>
-
-	</div>
-
-
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+	
 			
 			
 			
@@ -509,27 +441,7 @@ to your dream body with my uniquely designed workouts!
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			
-			<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+			
 			
 			
 			
